@@ -7,6 +7,7 @@ body {
 
 img {
   border-radius: 4px;
+
 }
 
 #home {
@@ -30,7 +31,7 @@ img {
 text-shadow: 0 0 5px #2256F4, 0 0 5px #00ECFF, 1px 2px 2px #00A6FF;
 }
 
-#envoy, #spaceStation, a {
+#envoy {
   text-align: center;
   background: rgba(0, 0, 9, 0.8);
   border-radius: 4px;
@@ -73,14 +74,27 @@ border-color: transparent;
   background: rgba(0, 0, 9, 0.8);
 }
 
-#colonize {
+#spaceStation {
+  text-align: center;
+  background: rgba(0, 0, 9, 0.8);
+  border-radius: 4px;
+  color: #00ECFF;
+  font-family: 'Orbitron', sans-serif;
+  border-color: transparent;
+}
+#stationDesign {
+  background-color: transparent;
+
+}
+
+/* #colonize {
   text-align: center;
   background: rgba(0, 0, 9, 0.8);
   border-radius: 4px;
   color: #2256F4;
   font-family: 'Orbitron', sans-serif;
   border-color: transparent;
-}
+} */
 
 #resultScreen {
   text-align: center;
@@ -99,8 +113,6 @@ border-color: transparent;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
-
 
 .button {
   background-color: #2256F4;
@@ -169,9 +181,7 @@ border-color: transparent;
   color: black;
 }
 
-
-
-#game1, #game2, a {
+#game1, #game2, #purchase, a {
   background-color: transparent;
   border: none;
   color: black;
@@ -188,20 +198,21 @@ border-color: transparent;
   text-shadow: 0 0 5px #00ECFF, 0 0 5px #2256F4;
 }
 
-#game1, #game2, a {
+#game1, #game2, #purchase, a {
   background-color: transparent;
   color: #00ECFF;
   border: 2px solid #00ECFF, 0 0 5px #2256F4;
   border-radius: 12px;
 }
-#game1:hover, #game2:hover, a {
+#game1:hover, #game2:hover, #purchase:hover, a {
   background-color: #00ECFF;
   color: black;
 }
 
 #crew1, #crew2, #crew3, #crew4, #crew5,
 #crew6, #crew7, #crew8, #crew9, #crew10,
-a {
+#item1, #item2, #item3, #item4, #item5,
+#item6, #item7, a {
   background-color: transparent;
   color: #00ECFF;
   /* border: 2px solid #00ECFF, 0 0 5px #2256F4; */
@@ -210,7 +221,7 @@ a {
   text-shadow: 0 0 5px #00ECFF, 0 0 5px #2256F4;
 }
 
-#gameMenu, #gameMenu2, #exit, #restart,  a {
+#gameMenu, #gameMenu2, #exit, #goHome, #goHome2, a {
   background-color: transparent;
   border: none;
   color: black;
@@ -219,25 +230,23 @@ a {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   box-shadow: 0 0 5px #00ECFF, 0 0 5px #2256F4;
   text-shadow: 0 0 5px #00ECFF, 0 0 5px #2256F4;
 }
-
-#gameMenu, #gameMenu2, #exit, #restart, a {
+#gameMenu, #gameMenu2, #exit, #goHome, #goHome2, a {
   background-color: transparent;
   color: #00ECFF;
   border: 2px solid #00ECFF, 0 0 5px #2256F4;
   border-radius: 12px;
 }
-#gameMenu:hover, #gameMenu2:hover, #exit:hover, #restart:hover, a {
+#gameMenu:hover, #gameMenu2:hover, #exit:hover, #goHome:hover,#goHome2:hover, a {
   background-color: #00ECFF;
   color: black;
 }
-
 .footer {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
@@ -284,7 +293,6 @@ a {
   	padding:0;
   	display:inline-block;
   	float:left;
-  	/* content: attr(value) '%'; */
   }
 
   progress#fuel {
@@ -321,7 +329,6 @@ a {
   	padding:0;
   	display:inline-block;
   	float:left;
-  	/* content: attr(value) '%'; */
   }
   progress#food {
     display:inline-block;
@@ -357,7 +364,6 @@ a {
     padding:0;
     display:inline-block;
     float:left;
-    /* content: attr(value) '%'; */
   }
 
   progress#shield {
@@ -479,51 +485,14 @@ a {
   #item1, #item2, #item3, #item4, #item5, #item6, #item7 {
     height: 200px;
     width: 200px;
-    background-color: black;
+    background: rgba(0, 0, 9, 0.8);
 
   }
-  #stationDesign {
-    background-color: transparent;
-  }
-  #purchase {
-    border-color: transparent;
-    border: none;
-    color: black;
+
+  #row1, #row2, #row3, #row4, #row5, a {
+    margin-left: 25px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    box-shadow: 0 0 5px #00ECFF, 0 0 5px #2256F4;
-    text-shadow: 0 0 5px #00ECFF, 0 0 5px #2256F4;
+    justify-content: center;
+    display: flex;
+    /* margin: 0 auto; */
   }
-  #row1, #row2, #row3, a {
-    margin-left: 100px;
-  }
-  /* #shipType, #statCard, a {
-    background: black;
-    color: #00ECFF;
-    font-family: 'Orbitron', sans-serif;
-    border-color: transparent;
-  } */
-  /* #shipHp{
-    float: left;
-  }
-  #shipFuel{
-    float: left;
-  }
-  #Money{
-    float: left;
-  }
-  #shipParts{
-    float: left;
-  }
-  #shipOre{
-    float: left;
-  }
-  #shipWeapons{
-    float: left;
-  } */
