@@ -1,12 +1,12 @@
 # STELLAR TRAIL
 
-#### Find a doctor near you by practice. 7/4/19
+#### A spaces war game.  7/4/19
 
-#### By **Uriel Gonzalez**
+#### By **Uriel Gonzalez, Marqis Ramos, Aaron Whang and Anthony Golovin**
 
 ## Description
 
-A website where user select a medical practice and they receive a list of doctors of the selected practice in Seattle, WA.
+A program that...
 
 ### Specs
 | Specifications |
@@ -28,7 +28,6 @@ A website where user select a medical practice and they receive a list of doctor
 
 5. Run.
 
-
 ## Known Bugs
 
 * No known bugs at this time.
@@ -42,10 +41,10 @@ A website where user select a medical practice and they receive a list of doctor
 
 ## Support and contact details
 
-_Email me at ugonzalez86@gmail.com for questions, comments, or concerns._
+_Email any group member with questions, comments, or concerns._
 
 ### License
 
 *{This software is licensed under the MIT license}*
 
-Copyright (c) 2019 **_{Uriel Gonzalez}_**
+Copyright (c) 2019 **_{Uriel Gonzalez, Marqis Ramos, Aaron Whang and Anthony Golovin}_**

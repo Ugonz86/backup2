@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("#Screen").hide();
   $("#spaceStation").hide();
   $("#prompts").hide();
-  $("#prompts2").hide();
+  // $("#prompts2").hide();
 
   $("#start").click(function() {
     $("#home").hide();
@@ -69,12 +69,12 @@ $(document).ready(function() {
       $("#fuel").html("<progress id='fuel' value=" + Math.floor(missionEnvoy.fuel * 100 / missionEnvoy.fuelcap) + " max='100'></progress>");
       $("#food").html("<progress id='food' value=" + Math.floor(missionEnvoy.food * 100 / missionEnvoy.foodcap) + " max='100'></progress>");
       $("#shield").html("<progress id='shield' value=" + Math.floor(missionEnvoy.shield / 10) + " max='100'></progress>");
-      $("#money").html("ship money: " + missionEnvoy.money);
-      $("#shipWeapons").html("ship ammo: " + missionEnvoy.ammo);
+      $("#money").html("Ship money: " + missionEnvoy.money);
+      $("#shipWeapons").html("Ship ammo: " + missionEnvoy.ammo);
       $("#travelDistance").html("Distance: " + missionEnvoy.distance);
       $("#distanceTraveled").html("<progress id='distanceTraveled' value=" + Math.floor(missionEnvoy.distance * 100 / 600000) + " max='100'></progress>");
-      $("#shipOre").html("ship materials: " + missionEnvoy.materials);
-      $("#shipParts").html("ship parts: " + missionEnvoy.parts);
+      $("#shipOre").html("Ship materials: " + missionEnvoy.materials);
+      $("#shipParts").html("Ship parts: " + missionEnvoy.parts);
       for (let i = 0; i < missionEnvoy.crew.length; i++) {
         $("#health" + i).html("<progress id='health' value=" + Math.floor(missionEnvoy.crew[i].health / 3) + " max='100'></progress>");
       }
