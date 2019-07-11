@@ -224,7 +224,6 @@ $(document).ready(function() {
     }
   });
 
-
   $("#game2").click(function() {
     $("#gameSelector").hide();
     $("#colonize").show();
