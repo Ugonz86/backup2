@@ -1,6 +1,6 @@
 # STELLAR TRAIL
 
-#### A spaces war game.  7/4/19
+#### A space war game.  7/4/19
 
 #### By **Uriel Gonzalez, Marqis Ramos, Aaron Whang and Anthony Golovin**
 
